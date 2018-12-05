@@ -26,7 +26,7 @@ before_install:
   - sudo apt-add-repository "deb http://zeroc.com/download/apt/ubuntu`lsb_release -rs` stable main"
   - sudo apt-get update
   - sudo apt-get -y install zeroc-ice-all-runtime
-  - sudo curl -Lv https://gitlab.com/openmicroscopy/incubator/zeroc-ice-py-ubuntu1604/-/jobs/129805187/artifacts/file/dist/zeroc_ice-3.6.4-cp27-cp27mu-linux_x86_64.whl
+  - sudo curl -L -O https://gitlab.com/openmicroscopy/incubator/zeroc-ice-py-ubuntu1604/-/jobs/129805187/artifacts/file/dist/zeroc_ice-3.6.4-cp27-cp27mu-linux_x86_64.whl
   - sudo pip install -U zeroc_ice-3.6.4-cp27-cp27mu-linux_x86_64.whl
   #- sudo pip install -U "zeroc-ice<3.7"
   - pip install omego
