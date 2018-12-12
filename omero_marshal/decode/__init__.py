@@ -34,7 +34,7 @@ class Decoder(object):
 
     def set_property(self, target, prop, value):
         field_info = getattr(target._field_info, prop)
-        if isinstance(value, unicode):
+        if isinstance(value, str):
             value = value.encode('utf-8')
         setattr(
             target,
